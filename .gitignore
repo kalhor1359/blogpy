@@ -1,2 +1,9 @@
 # stuff
 .idea/
+
+# databse
+db.sqlite3
+
+# migrations
+blog/migrations/
+
