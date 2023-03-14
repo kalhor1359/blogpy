@@ -21,6 +21,7 @@ class UserProfile(models.Model):
     def __str__(self):
         return self.user.first_name
 class Article(models.Model):
+    objects = None
     title = models.CharField(max_length=128, null=False, blank=False)
     cover = models.FileField(upload_to='files/article_cover/', null=False, blank=False)
     content = RichTextField()
@@ -37,4 +38,5 @@ class Category(models.Model):
 
     def __str__(self):
         return self.title
+
 
